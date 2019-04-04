@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <h1>Checkout Page</h1>
+    <header>
+        <nav>
+            <h4>Navigation</h4>
+            <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catolog.html">Catolog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    
+<div class="row-cart">
+        <div class="col-25">
+          <div class="container">
+            <h2>Cart <span class="price"> <b>3</b></span></h2>
+            <p><a href="#">Calculus</a> <span class="price">$141.77</span></p>
+            <p><a href="#">Introduction to Sociology</a> <span class="price">$10.99</span></p>
+            <p><a href="#">PHP and MySQL for Dynamic Web Sites</a> <span class="price">$49.99</span></p>
+            <hr>
+            <p>Total <span class="price"><b>$202.75</b></span></p>
+          </div>
+        </div>
+</div>
+
+
+    <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form>
+                
+                  <div class="row">
+                    <div class="col-50">
+                    <h3> Shipping Information</h3>
+
+                      <div class="row">
+                            <div class="col-50">
+                              <label for="firstname">First Name </label><input id="firstname" type="text" name="firstname" required="required" />
+                            </div>
+                            <div class="col-50">
+                                <label for="lastname">Last Name </label><input id="lastname" type="text" name="lastname" required="required" />
+                            </div>
+                    </div>
+
+                    <label for="email">Email Address </label><input id="email" type="email" name="email" required="required" />
+
+                    <label for="phone_number">Phone number</label><input id="phone_number" type="text" name="phone_number" required="required" />
+
+                    <label for="address">Adress </label><input id="address" type="text" name="address" required="required" />
+
+                    <label for="city">City </label><input id="city" type="text" name="city" required="required" />
+
+
+          
+                      <div class="row">
+                        <div class="col-50">
+                                <label for="state">Sate </label>
+                                <input id="state" type="text" name="state">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip">
+                        </div>
+                      </div>
+                      <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                          </label>
+                    </div>
+          
+
+
+                    <div class="col-50">
+
+                    <h3> Shipping Method</h3>
+
+                    <input type="radio" name="method" value="regular"><label>Regular(4-6 days,no tracking) <span class="price"><strong>$5.00</strong></span></label>
+                    <input type="radio" name="method" value="express"><label>Express(2 day,tracking) <span class="price"><strong>$15.00</strong></span></label>
+
+
+
+                    <h3>Payment Method</h3>
+                    <input type="radio" name="payment" value="paypal"><label>PayPal</label>
+                    <input type="radio" name="payment" value="card"><label>Credit Card</label>
+                    <label for="card_type"> Credit Card Type</label>
+                    <input  id="card_type" type="text" name="card_type" required="required">
+
+                    <label for="card_name">Name on Card </label><input id="card_name" type="text" name="card_name" required="required" />
+                    <label for="card_number">Credit Card Number </label><input id="card_number" type="text" name="card_number" required="required" />
+                    <label for="experation_month">Experation Month </label>
+                    <input  id="experation_month"  name="experation_month" type="text" required="required">
+
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input id="experation_year" type="text" name="experation_year" required="required">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv">
+                          <a href="https://www.creditcards.com/credit-card-news/wp-content/uploads/finding-cc-security-codes-lg-1.png"> What is this?</a>
+                        </div>
+
+                        
+                      </div>
+                  </div>
+
+                  <input type="submit" value="Take My Money" class="btn">
+
+                </form>
+
+                
+              </div>
+            </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
